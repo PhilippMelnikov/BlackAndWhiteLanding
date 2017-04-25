@@ -1,0 +1,91 @@
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .sizer {
+    width: 49%;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .sizer {
+    width: 48%;
+  }
+  .banner-text {
+    width: 100%;
+  }
+  .footer-column {
+    margin-bottom: 50px;
+  }
+  .clearfix :last-child {
+    margin-bottom: 0px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .my-navbar .menu-button {
+    display: block;
+  }
+  .sect-1 {
+    min-height: 560px;
+  }
+  .large-screen-nav {
+    display: none;
+  }
+  .sizer {
+    width: 100%;
+  }
+  .banner-text {
+    width: 100%;
+  }
+  .banner-text h2 {
+    font-size: 40px;
+  }
+  .banner-text h3 {
+    font-size: 30px;
+  }
+  .testimonial {
+    max-width: 463px;
+  }
+  .testimonial .testimonial-text {
+    font-size: 20px;
+  }
+  .personal-info {
+    width: 100%;
+  }
+  .personal-info input:first-of-type {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  .personal-info .form-control {
+    display: block;
+    width: 100%;
+  }
+  .footer-column {
+    margin-bottom: 50px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .sect-1 {
+    min-height: 100vh;
+  }
+  .heading h1 {
+    font-size: 30px;
+  }
+  .heading p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    color: #5f5f5f;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: center;
+    margin: 30px auto;
+  }
+}
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
