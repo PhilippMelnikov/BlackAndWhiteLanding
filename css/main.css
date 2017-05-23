@@ -334,6 +334,7 @@ body {
   opacity: .9;
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0;
   bottom: 0;
   display: none;
@@ -572,6 +573,8 @@ body {
 .blog-post .caption {
   padding: 25px 30px;
   background-color: #fff;
+  height: 268px;
+  overflow: hidden !important;
 }
 .blog-post .caption h1 {
   font-family: 'Playfair Display', serif;
@@ -592,6 +595,7 @@ body {
   font-size: 15px;
   color: #5f5f5f;
   line-height: 1.6;
+  text-overflow: ellipsis;
 }
 .contact-section {
   background-color: #eee;

@@ -4,7 +4,7 @@ $(document).ready(function () {
 		$('.my-navbar').addClass('white-navbar');
 	}
 	$(this).scroll(function() {
-		console.log($(this).scrollTop());
+
 		if($(this).scrollTop() >= 100)
 		{
 			$('.my-navbar').addClass('white-navbar');
@@ -101,9 +101,10 @@ var mySwiper3 = new Swiper ('.swiper3', {
 	 // anchors
    $('.anchor').click(function () {
   		var hrefName = $(this).attr('href');
+  		var timeToScroll = Math.abs($(window).scrollTop() - $(hrefName).offset().top) / 3;
 		$('html, body').animate({
 	        scrollTop: $(hrefName).offset().top - 60
-	    }, 600);
+	    }, timeToScroll);
 	});
 
    $(".collapsed-anchor").click(function () {
@@ -123,5 +124,22 @@ var mySwiper3 = new Swiper ('.swiper3', {
 	   'infobar':true,
 	   'buttons':false
 	  });
+
+	// adding 3 dots to blog text if it's too long
+
+	// set height of dark cover of masonry item
+	function setDarkCoverHeight(){
+		$(".item-masonry").each(function(index, element){
+			var itemHeight = $(this).find("img").height();
+
+			$(this).find(".cover-item-gallery").css("height", itemHeight);
+		});
+	}
+	
+	setDarkCoverHeight();
+
+	$( window ).resize(function(){
+		setDarkCoverHeight();
+	});
 
 })
