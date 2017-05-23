@@ -22,11 +22,6 @@ $(document).ready(function () {
 		$('.collapsed-menu').fadeOut(300);
 	});
 
-	$('.arrow-container').click(function () {
-		$('html, body').animate({
-	        scrollTop: $(".about-section").offset().top
-	    }, 300);
-	});
 
 	 var mySwiper = new Swiper ('.swiper1', {
     // Optional parameters
@@ -122,5 +117,11 @@ var mySwiper3 = new Swiper ('.swiper3', {
 	$('.close-button').click(function () {
 		$('.collapsed-menu').fadeOut(300);
 	});
+
+	//fancybox
+	  $(".fancybox").fancybox({
+	   'infobar':true,
+	   'buttons':false
+	  });
 
 })
