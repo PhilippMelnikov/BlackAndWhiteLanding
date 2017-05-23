@@ -1,6 +1,8 @@
 $(document).ready(function () {
 	// $('.carousel').carousel({interval: 6000});
-
+	if($(this).scrollTop() >= 100){
+		$('.my-navbar').addClass('white-navbar');
+	}
 	$(this).scroll(function() {
 		console.log($(this).scrollTop());
 		if($(this).scrollTop() >= 100)
@@ -73,7 +75,7 @@ var mySwiper3 = new Swiper ('.swiper3', {
 
 	var sizer = '.sizer';
 
-	var gutter = 19;
+	var gutter = 10;
 
 	var container = $('.gallery');
 
@@ -99,6 +101,26 @@ var mySwiper3 = new Swiper ('.swiper3', {
 			gutter: instagramGutter,
 			percentPosition: true
 		});
+	});
+
+	 // anchors
+   $('.anchor').click(function () {
+  		var hrefName = $(this).attr('href');
+		$('html, body').animate({
+	        scrollTop: $(hrefName).offset().top - 60
+	    }, 600);
+	});
+
+   $(".collapsed-anchor").click(function () {
+   		$('.collapsed-menu').fadeOut(300);
+   })
+
+   $('.menu-button').click(function(){
+		$('.collapsed-menu').fadeIn(300);
+	});
+
+	$('.close-button').click(function () {
+		$('.collapsed-menu').fadeOut(300);
 	});
 
 })

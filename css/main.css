@@ -17,7 +17,7 @@ body {
   width: 100%;
 }
 .sect-1 {
-  min-height: 760px;
+  min-height: 100vh;
 }
 .sect-2 {
   min-height: 400px;
@@ -625,19 +625,22 @@ body {
   font-size: 12px;
 }
 .personal-info {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .personal-info input:first-of-type {
   margin-right: 20px;
-}
-.personal-info .form-control {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  width: 48%;
 }
 .form-control {
   padding: 26px 28px;

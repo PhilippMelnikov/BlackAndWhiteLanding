@@ -4,6 +4,18 @@
   .sizer {
     width: 49%;
   }
+  .feature-col-2 {
+    float: right;
+  }
+  .happy-clients {
+    margin-right: 10px;
+  }
+  .item-masonry-size-1 {
+    margin-bottom: 27px;
+  }
+  .swiper3 {
+    margin-bottom: 0;
+  }
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -19,6 +31,9 @@
   .clearfix :last-child {
     margin-bottom: 0px;
   }
+  .item-masonry-size-1 {
+    margin-bottom: 22px;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -32,7 +47,7 @@
     display: none;
   }
   .sizer {
-    width: 100%;
+    width: 49%;
   }
   .banner-text {
     width: 100%;
@@ -43,13 +58,42 @@
   .banner-text h3 {
     font-size: 30px;
   }
+  .sect-2 {
+    min-height: 200px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .feature-col-2 {
+    float: left;
+  }
+  .nk-gap-5 {
+    height: 50px;
+  }
+  .mnt-6 {
+    height: 25px;
+  }
+  .testimonials-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
   .testimonial {
     max-width: 463px;
+    margin: 20px auto 55px auto;
   }
   .testimonial .testimonial-text {
     font-size: 20px;
   }
+  .testimonial .testimonial-autor {
+    font-size: 12px;
+  }
+  .contact-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
   .personal-info {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
     width: 100%;
   }
   .personal-info input:first-of-type {
@@ -60,6 +104,10 @@
     display: block;
     width: 100%;
   }
+  .footer-section {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
   .footer-column {
     margin-bottom: 50px;
   }
@@ -68,6 +116,13 @@
 @media only screen and (max-width: 480px) {
   .sect-1 {
     min-height: 100vh;
+  }
+  .banner-text h3 {
+    font-size: 30px;
+    margin-top: 35px;
+  }
+  .happy-clients {
+    margin-right: 0px;
   }
   .heading h1 {
     font-size: 30px;
@@ -80,6 +135,21 @@
     max-width: 800px;
     text-align: center;
     margin: 30px auto;
+  }
+  .sizer {
+    width: 100%;
+  }
+}
+/* Double Extra Small Devices, Phones */
+@media only screen and (max-width: 360px) {
+  .testimonial .testimonial-text {
+    font-size: 19px;
+  }
+  .testimonial .testimonial-text::before {
+    font-size: 22px;
+  }
+  .testimonial .testimonial-text::after {
+    font-size: 22px;
   }
 }
 /* Custom, iPhone Retina */
