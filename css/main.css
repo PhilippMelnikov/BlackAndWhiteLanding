@@ -527,7 +527,7 @@ body {
 }
 .swiper3 {
   min-height: 560px;
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 .swiper3 .swiper-slide {
   max-width: 350px;
