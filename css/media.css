@@ -141,6 +141,9 @@
     text-align: center;
     margin: 30px auto;
   }
+  .swiper3 {
+    min-height: 550px;
+  }
   .sizer {
     width: 100%;
   }
