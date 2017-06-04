@@ -157,6 +157,56 @@
     font-size: 22px;
   }
 }
+@media only screen and (max-width: 320px) {
+  .testimonial .testimonial-text {
+    font-size: 19px;
+  }
+  .testimonial .testimonial-text::before {
+    font-size: 22px;
+  }
+  .testimonial .testimonial-text::after {
+    font-size: 22px;
+  }
+  .testimonials-section {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .contact-section {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .contact-section .contact-container p {
+    margin: 40px 0 30px 0;
+  }
+  .contact-section .contact-container .info .piece-of-info {
+    margin-bottom: 15px;
+  }
+  .personal-info input:first-of-type {
+    margin-bottom: 20px;
+  }
+  .nk-gap-1 {
+    height: 20px;
+  }
+  .swiper2 {
+    height: 200px;
+  }
+  .swiper-container-horizontal .swiper-pagination-bullets {
+    bottom: 20px;
+  }
+  .swiper3 {
+    min-height: 510px;
+  }
+  .sect-2 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .heading p {
+    margin: 20px auto;
+  }
+  .blog-post .caption {
+    padding: 15px 20px;
+  }
+}
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
