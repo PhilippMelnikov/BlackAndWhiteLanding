@@ -24,38 +24,32 @@ $(document).ready(function () {
 
 
 	 var mySwiper = new Swiper ('.swiper1', {
-    // Optional parameters
     direction: 'horizontal',
     loop: true,
-    
-    // If we need pagination
-    pagination: '.swiper-pagination',
-
+    pagination: '.swiper1-pagination',
+		paginationClickable: true,
     centeredSlides: true
 
   });
   mySwiper.setGrabCursor();
 
   var mySwiper2 = new Swiper ('.swiper2', {
-    // Optional parameters
     slidesPerView: 'auto',
     spaceBetween: 0,
-    loop: true, 
+    loop: true,
     centeredSlides: true
-
   });
-  mySwiper2.setGrabCursor();          
+  mySwiper2.setGrabCursor();
 
 var mySwiper3 = new Swiper ('.swiper3', {
-    // Optional parameters
     slidesPerView: 'auto',
     spaceBetween: 50,
     loop: true,
-    pagination: '.swiper3-pagination', 
+    pagination: '.swiper3-pagination',
+		paginationClickable: true,
     centeredSlides: true
-
   });
-  mySwiper3.setGrabCursor();  
+  mySwiper3.setGrabCursor();
 
 	$('.item-masonry').hover(
 		function () {
@@ -135,7 +129,7 @@ var mySwiper3 = new Swiper ('.swiper3', {
 			$(this).find(".cover-item-gallery").css("height", itemHeight);
 		});
 	}
-	
+
 	setDarkCoverHeight();
 
 	$( window ).resize(function(){
