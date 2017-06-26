@@ -90,6 +90,7 @@ var mySwiper3 = new Swiper ('.swiper3', {
 			gutter: instagramGutter,
 			percentPosition: true
 		});
+		setDarkCoverHeight();
 	});
 
 	 // anchors
