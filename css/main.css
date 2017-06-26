@@ -485,6 +485,7 @@ body {
   vertical-align: middle;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
+  z-index: 100;
 }
 .swiper-pagination-bullet-active {
   width: 12px;
