@@ -40,9 +40,6 @@
   .my-navbar .menu-button {
     display: block;
   }
-  .sect-1 {
-    min-height: 560px;
-  }
   .large-screen-nav {
     display: none;
   }
