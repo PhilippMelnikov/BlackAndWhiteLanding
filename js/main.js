@@ -60,7 +60,19 @@ var mySwiper3 = new Swiper ('.swiper3', {
 		}
 	);
 
+	// set height of dark cover of masonry item
+	function setDarkCoverHeight(){
+		$(".item-masonry").each(function(index, element){
+			var itemHeight = $(this).find("img").height();
 
+			$(this).find(".cover-item-gallery").css("height", itemHeight);
+		});
+	}
+
+
+	$( window ).resize(function(){
+		setDarkCoverHeight();
+	});
 
 	var sizer = '.sizer';
 
@@ -120,21 +132,7 @@ var mySwiper3 = new Swiper ('.swiper3', {
 	   'buttons':false
 	  });
 
-	// adding 3 dots to blog text if it's too long
 
-	// set height of dark cover of masonry item
-	function setDarkCoverHeight(){
-		$(".item-masonry").each(function(index, element){
-			var itemHeight = $(this).find("img").height();
 
-			$(this).find(".cover-item-gallery").css("height", itemHeight);
-		});
-	}
-
-	setDarkCoverHeight();
-
-	$( window ).resize(function(){
-		setDarkCoverHeight();
-	});
 
 })
